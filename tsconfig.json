@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"strict": true,
+		"alwaysStrict": true,
+		"strictNullChecks": true,
+		"noUncheckedIndexedAccess": true,
+
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"allowUnreachableCode": false,
+		"noFallthroughCasesInSwitch": true,
+
+    "target": "es5",
+		"outDir": "out",
+		"declaration": true,
+		"sourceMap": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "jsx": "preserve",
+    "isolatedModules": true,
+    "incremental": true,
+    "noEmit": true,
+
+    "baseUrl": ".",
+    "paths": {
+			"@/*": ["./src/*"],
+			"@/public/*": ["./public/*"],
+			"@/styles/*": ["./src/styles/*"],
+			"@/strapi/*": ["./src/lib/*"],
+			"@/hooks/*": ["./src/hooks/*"],
+			"@/utils/*": ["./src/utils/*"]
+		}
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/lib/markdownToHtml.ts", "src/lib/api.ts"],
+  "exclude": ["./out/**/*", "./node_modules/**/*"]
+}
+
